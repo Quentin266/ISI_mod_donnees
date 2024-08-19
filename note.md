@@ -49,3 +49,53 @@ dependance fonctionelle : définis une relation de dependance entre deux attribu
 
 relation symboliser par un verbe 
 
+## Les cardinalités 
+
+les cardinalités exprime le nombre de fois ou l'occurence d'une entité participe aux occurences de la relation
+
+combien de fois un client peut-il commander un article ?
+
+combien de fois au maximum un client peut-il commander un article ?
+
+![alt text](image-4.png)
+
+pour obtenir la caridnalité suivante, on se pose la même question, mais cette fois-ci l'entité Article
+
+![alt text](image-5.png)
+
+si elle est connue il faut le noter 
+
+## Les relations porteuses 
+
+porteuse quand elle possède des propiétés 
+
+deux entités = relation binaire
+
+trois entités = relation ternaire 
+
+## Les relations reflexives 
+
+elle est relie une entité à elle même 
+
+# Règles conception
+
+tout entité doit avoir un ID 
+
+toutes les propriétés de l'entité depandent de l'ID
+
+nom d'une propriété doit appaitre une seule fois (unique) dans tout le MCD pour rendre unique utiliser un préfixe/suffixe exemple : nom_suffixe
+
+## Notion d'entité forte et d'entité faible 
+
+entité forte : qui peut exister toute seule 
+
+entité faible : associé à une autre entité 
+
+## contrainte d'intégrité fonctionnelle 
+
+Une CIF est définie par le fait qu'une des entités de l'association est completement déterminée par la connaissance d'une ou plusieurs entités participant à l'association 
+
+![alt text](image-6.png)
+
+
+
