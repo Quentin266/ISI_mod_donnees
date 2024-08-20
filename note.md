@@ -97,5 +97,15 @@ Une CIF est définie par le fait qu'une des entités de l'association est comple
 
 ![alt text](image-6.png)
 
+# MLD (modèle logique de données)
 
+L'entité qui possède la cardinalité 1,1 ou 0,1 absorbe l'identifiant de l'entité la plus forte (0,n ou 1,n). Cet identifiant devient alors une clef étrangère
+
+![alt text](image-7.png)
+
+clef étrangère représenté par #
+
+Dans le cas, ou la cardinalité max est n des deux cotés, on cree une entité intermdédiaire qui va contenir les deux clefs étrangères des deux entités 
+
+![alt text](image-8.png)
 
