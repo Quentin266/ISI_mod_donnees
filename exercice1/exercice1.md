@@ -1,7 +1,7 @@
 ![alt text](exercice1MLD.png)
-![alt text](exercice1MDC.png)
 
-MLP :
+
+MLD :
  
 Animaux (numéro_animaux_Animaux, nom_animaux_Animaux, prix_animaux_Animaux, poids_animaux) 
 Fruits (numéro_fruits_Fruits, nom_fruits_Fruits, prix_fruits_Fruits) 
