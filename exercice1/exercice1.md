@@ -1,6 +1,5 @@
-![alt text](exercice1MLD.png)
 ![alt text](exercice1MDC.png)
-
+![alt text](image.p
 MPD :
  
 Animaux (numéro_animaux_Animaux, nom_animaux_Animaux, prix_animaux_Animaux, poids_animaux) 
