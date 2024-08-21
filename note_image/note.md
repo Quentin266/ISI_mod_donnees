@@ -109,3 +109,11 @@ Dans le cas, ou la cardinalité max est n des deux cotés, on cree une entité i
 
 ![alt text](image-8.png)
 
+## Forme normale 
+
+tous les attributs sont atomiques 
+les attributs ne contiennent pas de valeurs repetitives
+
+## Les diagrammes des flux 
+
+![alt text](image-9.png)
