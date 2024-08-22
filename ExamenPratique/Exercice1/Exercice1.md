@@ -38,29 +38,29 @@ USE examExercice1;
 
 CREATE TABLE Produit (
     numéro_Produit INT PRIMARY KEY,
-    désignation_Produit VARCHAR(255),
+    désignation_Produit VARCHAR(20),
     descriptif_Produit TEXT,
     prix_venteHT_Produit DECIMAL(10, 2)
 );
 
 CREATE TABLE Produit_Fabriqué (
     numéro_Produit_Fabriqué INT PRIMARY KEY,
-    nom_Produit_Fabriqué VARCHAR(255),
+    nom_Produit_Fabriqué VARCHAR(20),
     nombre_heure_main_oeuvre_Produit_Fabriqué DECIMAL(10, 2)
 );
 
 CREATE TABLE Produit_Approvisionné (
     numéro_Produit_Approvisionné INT PRIMARY KEY,
-    nom_Produit_Approvisionné VARCHAR(255),
+    nom_Produit_Approvisionné VARCHAR(20),
     prix_achat_unitaire_moyen_Produit_Approvisionné DECIMAL(10, 2)
 );
 
 CREATE TABLE Fournisseur (
     numéro_Fournisseur INT PRIMARY KEY,
-    raison_sociale_Fournisseur VARCHAR(255),
-    ville_Fournisseur VARCHAR(255),
-    adresse_Fournisseur TEXT,
-    code_postal_Fournisseur VARCHAR(10)
+    raison_sociale_Fournisseur VARCHAR(25),
+    ville_Fournisseur VARCHAR(25),
+    adresse_Fournisseur VARCHAR(100),
+    code_postal_Fournisseur VARCHAR(5)
 );
 
 CREATE TABLE Date (
@@ -79,10 +79,10 @@ CREATE TABLE Ligne_Commande (
 
 CREATE TABLE Contenir (
     numéro_Commande INT,
-    numéro_Ligne INT,
-    PRIMARY KEY (numéro_Commande, numéro_Ligne),
+    numéro_Ligne_Commande INT,
+    PRIMARY KEY (numéro_Commande, numéro_Ligne_Commande),
     FOREIGN KEY (numéro_Commande) REFERENCES Commande(numéro_Commande),
-    FOREIGN KEY (numéro_Ligne) REFERENCES Ligne_Commande(numéro_Ligne_Commande)
+    FOREIGN KEY (numéro_Ligne_Commande) REFERENCES Ligne_Commande(numéro_Ligne_Commande)
 );
 
 CREATE TABLE Présente (
